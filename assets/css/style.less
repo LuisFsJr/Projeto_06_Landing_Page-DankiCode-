@@ -253,6 +253,130 @@ nav.desktop{
 
 
 
+.final-section{
+    padding: 50px 0;
+
+    h2{
+        position: relative;
+        font-weight: lighter;
+        color: #777777;
+        font-size: 24px;
+
+        > span{
+            width: 50px;
+            height: 2px;
+            background: #777;
+            position: absolute; 
+            transition: .5s;
+
+
+            
+
+        }
+
+        
+    }
+
+    .w50{
+        float: left;
+        padding: 0 20px;
+    }
+
+    .contato{
+        min-height: 300px;
+
+        &:hover h2 > span{
+            width: 100px;
+        }
+
+        input:not([type="submit"]){
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            padding-left: 8px;
+            margin-top: 20px;
+            color: rgb(70, 70, 70);
+
+        }
+
+        input[type='submit']{
+            padding: 10px 35px;
+            border-radius: 23px;
+            border: 0;
+            color: white;
+            background-color: #2692FF;
+            cursor: pointer;
+            font-size: 14px;
+            display: block;
+            margin-top: 20px;
+        }
+
+        textarea{
+            width: 100%;
+            height: 120px;
+            border: 1px solid #ccc;
+            resize: none;
+            margin-top: 25px;
+            padding: 8px;
+            color: rgb(70, 70, 70);
+        }
+
+
+    }
+
+
+
+
+    .time{
+        &:hover h2 > span{
+            width: 100px;
+        }
+
+        > .w50{
+            width: 48%;
+        }
+
+        .equipe-single{
+            box-shadow: -1px 0px 60px -3px rgba(53, 53, 53, 0.1);
+
+            min-height: 200px;
+            padding: 10px 8px;
+            margin: 15px 1%;
+            padding-bottom: 10px;
+
+            .topo-box-usuario{
+                padding-bottom: 10px;
+                border-bottom: 1px solid #ccc;
+
+                .box-avatar{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    background: #ccc;
+                }
+
+
+                .info-usuario{
+                    display: inline-block;
+                    color: #777777;
+                    margin-left: 6px;
+                    vertical-align: middle;
+                }
+
+                
+            }
+            .description{
+                padding: 21px;
+                font-weight: lighter;
+                color: #777777;
+            }
+        }
+    }
+    
+}
+
 
 
 
@@ -260,6 +384,9 @@ nav.desktop{
 
 /* ========== // MEDIA QUERIES // ========== */
 @media screen and (max-width: 800px){
+    .w50{
+        width: 100%;
+    }
     .box-planos{
         .center{
             flex-wrap: wrap;
@@ -270,6 +397,15 @@ nav.desktop{
                 min-width: 340px;
                 margin-bottom: 40px;
             }
+        }
+    }
+
+    .time{
+        margin-top: 40px;
+
+        > .w50{
+            width: 100%;
+            margin: 15px 0;
         }
     }
 }
